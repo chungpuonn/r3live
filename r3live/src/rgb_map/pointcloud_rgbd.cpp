@@ -178,7 +178,8 @@ Global_map::Global_map( int if_start_service )
     }
     else
     {
-        m_rgb_pts_vec.reserve( 1e9 );
+        // m_rgb_pts_vec.reserve( 1e9 );
+        m_rgb_pts_vec.reserve( 5e8 );
     }
     // m_rgb_pts_in_recent_visited_voxels.reserve( 1e6 );
     if ( if_start_service )

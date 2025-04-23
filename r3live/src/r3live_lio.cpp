@@ -1040,8 +1040,15 @@ int R3LIVE::service_LIO_update()
             q.setY( odomAftMapped.pose.pose.orientation.y );
             q.setZ( odomAftMapped.pose.pose.orientation.z );
             transform.setRotation( q );
-            br.sendTransform( tf::StampedTransform( transform, ros::Time().fromSec( Measures.lidar_end_time ), "world", "/aft_mapped" ) );
 
+
+
+
+            // br.sendTransform( tf::StampedTransform( transform, ros::Time().fromSec( Measures.lidar_end_time ), "world", "/aft_mapped" ) );
+
+
+
+            
             msg_body_pose.header.stamp = ros::Time::now();
             msg_body_pose.header.frame_id = "/camera_odom_frame";
             msg_body_pose.pose.position.x = g_lio_state.pos_end( 0 );
