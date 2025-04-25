@@ -41,3 +41,6 @@ r3live_lio:
    filter_size_surf: 0.30
    filter_size_surf_z: 0.30
    filter_size_map: 0.30
+
+Image_topic: "/stereo/frame_left/image_raw"  
+# Image_topic: "/stereo/vehicle_frame_left/image_raw"
